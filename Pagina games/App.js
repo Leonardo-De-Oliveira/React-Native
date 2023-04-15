@@ -4,7 +4,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { FontAwesome5 } from '@expo/vector-icons';
 
-import Estilos from './componentes/Estilos';
 import Xbox from './componentes/Xbox';
 import PS from './componentes/PS';
 import Nintendo from './componentes/Nintendo';
@@ -23,15 +22,6 @@ export default function App() {
 
         tabBarInactiveTintColor: '#000',
       }}>
-        
-        <Tabs.Screen 
-        name='Estilos' 
-        component={ Estilos } 
-        options={{
-          tabBarIcon: () => (
-            <FontAwesome5 name="css3-alt" size={24} color='#0070b8' />
-          ),
-        }}/>
         
 
         <Tabs.Screen 
